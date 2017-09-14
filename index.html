@@ -20,7 +20,7 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="#">Ristorante Con Fusion</a> 
+            <a class="navbar-brand" href="./index.html"><img src="img/logo.png" height="30" width="41"></a> 
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav">
                     <li class="nav-item active"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
@@ -34,11 +34,15 @@
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
-                <div class="col-12 col-sm-8">
+                <div class="col-12 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col col-sm">
+                <div class="col-12 col-sm-2 align-self-center">
+                    <img src="img/logo.png" class="img-fluid">
+                </div>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <a href="#reserve" class="btn btn-warning btn-block btn-sm">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -50,19 +54,28 @@
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
             <div class="col-sm col-md flex-first">
-                <h2>Uthappizza</h2>
-                <p class="hidden-xs-down">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/uthappizza.png" alt="Uthappizza">
+                    <div class="media-body">
+                        <h2 class="mt-0">Uthappizza <span class="badge badge-danger"> HOT</span> <span class="badge badge-pill badge-default"> $4.99</span></h2>
+                        <p class="hidden-xs-down">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                    </div>
+                </div>    
             </div>
         </div>
-
 
         <div class="row row-content align-items-center">
             <div class="col-sm-4 col-md-3">
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p class="hidden-xs-down">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                <div class="media">
+                    <div class="media-body"> 
+                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger"> NEW</span></h2>
+                        <p class="hidden-xs-down">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                    </div>
+                    <img class="d-flex mr-6 img-thumbnail align-self-center" src="img/buffet.png" alt="Buffet">
+                </div>
             </div>
         </div>
 
@@ -71,9 +84,64 @@
                 <h3>Meet our Culinary Specialists</h3>
             </div>
             <div class="col-sm pull-sm-4 col-md pull-md-3">
-                <h2>Alberto Somayya</h2>
-                <h4>Executive Chef</h4>
-                <p class="hidden-xs-down">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/alberto.png" alt="Alberto Somayya">
+                    <div class="media-body">
+                        <h2>Alberto Somayya</h2>
+                        <h4>Executive Chef</h4>
+                        <p class="hidden-xs-down">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="reserve" class="row row-content align-items-center">
+            <div class="col-xs col-sm-8 push-sm-2">   
+                <div class="card">
+                    <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
+                    <div class="card-block">
+                        <form class="form-horizontal" role="form"> 
+                            <div class="form-group">
+                                <div class="row">
+                                    <label for="noGuests" class="col-sm-2 control-label">Number of Guests</label>
+                                    <div class="col-sm-10">
+                                        <label class="radio-inline"><input type="radio" name="guestno" value="1" style="margin: 6px;"> 1 </label>
+                                        <label class="radio-inline"><input type="radio" name="guestno" value="2" style="margin: 6px;"> 2 </label>
+                                        <label class="radio-inline"><input type="radio" name="guestno" value="3" style="margin: 6px;"> 3 </label>
+                                        <label class="radio-inline"><input type="radio" name="guestno" value="4" style="margin: 6px;"> 4 </label>
+                                        <label class="radio-inline"><input type="radio" name="guestno" value="5" style="margin: 6px;"> 5 </label>
+                                        <label class="radio-inline"><input type="radio" name="guestno" value="6" style="margin: 6px;"> 6 </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">    
+                                    <label for="section" class="col-sm-2 control-label">Date and Time</label>
+                                    <div class="col-sm-4 inner-addon left-addon" aria-hidden="true">
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><i class="fa fa-calendar fa-md"></i></div>
+                                            <input type="text" class="form-control" placeholder="Date">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4 inner-addon left-addon">
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><i class="fa fa-clock-o fa-md"></i></div>
+                                            <input type="text" class="form-control" placeholder="Time">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-xs col-sm push-sm-2">
+                                        <button class="btn btn-primary btn-md">Reserve</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -87,7 +155,7 @@
                         <li><a href="./index.html">Home</a></li>
                         <li><a href="./aboutus.html">About</a></li>
                         <li><a href="#">Menu</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="./contactus.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-sm-5">
@@ -107,7 +175,7 @@
                         <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
                         <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
                         <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-                        <a class="btn btn-social-icon btn-youtubue" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                        <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
                         <a class="btn btn-social-icon" href="mailto:confusion@food.net"><i class="fa fa-envelope-o"></i></a>
                     </div>
                 </div>
