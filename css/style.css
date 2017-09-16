@@ -57,3 +57,16 @@ body {
 .carousel-caption {
   top: 25%;
 }
+.modal-header {
+  background-color: #512DA8;
+  color: floralwhite;
+}
+.modal-header .close {
+  color: floralwhite;
+}
+.modal-body {
+  background-color: #D1C4E9;
+}
+.modal-footer {
+  background-color: #9575CD;
+}
